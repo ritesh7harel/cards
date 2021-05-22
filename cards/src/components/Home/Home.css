@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    height: 100vh;
+    width: 20%;
+    border: 1px solid black;
+}
+
+.heading {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.card {
+    height: 300px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.title{
+    text-align: center;
+}
+
+.points{
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}

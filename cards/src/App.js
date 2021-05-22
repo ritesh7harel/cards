@@ -1,25 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home/Home';
+
+const data = {
+    columns: [
+        {
+            name: 'New',
+            cards: [
+                {
+                    id: '1',
+                    title: "title",
+                    points: "0"
+                }
+            ]
+        },
+        {
+            name: 'In Analysis',
+            cards: [
+                {
+                    id: '1',
+                    title: "title",
+                    points: "0"
+                },
+                {
+                    id: '2',
+                    title: "title",
+                    points: "0"
+                }
+            ]
+        },
+        {
+            name: 'In Dev'
+        },
+        {
+            name: 'In QA'
+        },
+        {
+            name: 'Done'
+        }
+    ]
+};
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Home data={data}/>
+        </div>
+    );
 }
 
 export default App;
